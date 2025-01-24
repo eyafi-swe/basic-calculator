@@ -2,9 +2,9 @@ import { useState } from "react";
 import { StyleSheet, View } from "react-native";
 import { Display, Keypad } from "@/components";
 import { Buttons } from "@/constants/Buttons";
-import Colors from "@/constants/Colors";
 import { calculateExpressionWithoutPercentage, calculateExpressionWithPercentage } from "@/utils/calculation";
 import { formatNumberToLocaleString } from "@/utils/formatters";
+import Colors from "@/constants/Colors";
 
 export default function Index() {
   const [display, setDisplay] = useState<string>("0");
@@ -71,7 +71,6 @@ export default function Index() {
     } else {
       result = formatNumberToLocaleString(calculateExpressionWithoutPercentage(display));
     }
-    // setDisplay(result);
     setResult(result);
   };
 

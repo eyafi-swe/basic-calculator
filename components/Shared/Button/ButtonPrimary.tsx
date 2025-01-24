@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { StyleProp, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native';
+import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native';
 import Colors from '@/constants/Colors';
 
 interface ButtonProps {
@@ -12,12 +12,25 @@ interface ButtonProps {
 const ButtonPrimary: FC<ButtonProps> = ({ label, onPress, style, labelStyle }) => {
   return (
     <TouchableOpacity
-      style={[{ backgroundColor: Colors.BLACK, borderRadius: 10, justifyContent: 'center', alignItems: 'center' }, style]}
+      style={[styles.parent, style]}
       onPress={onPress}
     >
-      <Text style={[{ color: 'white', fontSize: 20 }, labelStyle]}>{label}</Text>
+      <Text style={[styles.label, labelStyle]}>{label}</Text>
     </TouchableOpacity>
   );
 };
 
 export default ButtonPrimary;
+
+const styles = StyleSheet.create({
+  parent: {
+    backgroundColor: Colors.BLACK,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  label: {
+    color: 'white',
+    fontSize: 20
+  },
+});
