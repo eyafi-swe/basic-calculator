@@ -1,26 +1,42 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
-
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
-
-export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-  },
+export default {
+    YELLOW: "#FF9C46",
+    NORMAL: "#001D52",
+    HOVER: "#0245CA",
+    BTN_BG: "#012979",
+    LIGHT_NORMAL: "#6c92d5",
+    PRIM_BG: "#F2F6FF",
+    START_BG: "#F2F6FF",
+    END_BG: "#d5e0f7",
+    HEADING: "#000E29",
+    BLACK: "#000000",
+    PRIM_BODY: "#001D52",
+    PRIM_CAPTION: "#9CA2AB",
+    COLUMN: "#F2F3F7",
+    RED_HOVER: "#A71125",
+    RED_PUSHED: "#950F21",
+    GREEN_NORMAL: "#1DAF2B",
+    GREEN_HOVER: "#157F1F",
+    GREEN_PUSHED: "#11691A",
+    ICON_NORMAL: "#FFBA49",
+    WHITE: "#FFF",
+    INPUT_BG: "#495E86",
+    SIGN_IN_BTN_BG: "#246BFD",
+    GREY: "#808080",
+    LIGHT_GRAY: "#9CA2AB",
+    CONTAINER_BG: "#F2F6FF",
+    SECONDARY: "#246BFD",
+    HOME_TEXT: "#001D52",
+    HEADER_TEXT: "#9CA2AB",
+    ICON_BG: "#FF9C46",
+    IN_PROGRESS_BG: "#1DAF2B",
+    ON_HOLD_BG: "#E9203B",
+    PAST_DUE_BG: "#500043",
+    NEW_BG: "#6a6768",
+    COMPLETED_BG: "#828282",
+    REVIEW_BG: "#FFBA49",
+    Focused_TAB: "#FFBA49",
+    TOP_BOTTOM_BG: "#303034",
+    MID_BG: "#303034",
+    Box: "#080e2c",
+    SEC_BG: "#222224",
 };
